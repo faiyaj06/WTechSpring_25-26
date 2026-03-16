@@ -1,0 +1,5 @@
+const unitPrice = 1000;
+const days = 30;
+
+const quantity = document.getElementById("quantity");
+const totalPrice = document.getElementById("totalPrice");
