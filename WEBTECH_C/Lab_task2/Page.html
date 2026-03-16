@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <title> Contact Us Form </title>
+    <link rel="stylesheet" href="design.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1> Contact Us</h1>
+        <form onsubmit="return validateForm()">
+    <table>
+        <tr>
+            <td><label for="firstname">FIRST NAME</label></td>
+            <td><input type="text" id="firstname" name="firstname" ></td>
+        </tr>
+
+        <tr>
+            <td><label for="lastname">LAST NAME</label></td>
+            <td><input type="text" id="lastname" name="lastname" ></td>
+        </tr>
+
+        <tr>
+            <td><label for="email">EMAIL</label></td>
+            <td><input type="text" id="email" name="email" ></td>
+        </tr>
+
+        <tr>
+            <td><label for="phonenumber">PHONE NUMBER</label></td>
+            <td><input type="text" id="phone" name="phone" ></td>
+        </tr>
+
+        <tr>
+            <td><label for="message">WHAT DO YOU HAVE IN MIND</label></td>
+            <td><textarea id="message" name="message" rows="5" cols="50" placeholder="Please enter query..."></textarea></td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+    
+    </table>
+        </form>
+
+    </div>
+    </body>
+
+</html>
