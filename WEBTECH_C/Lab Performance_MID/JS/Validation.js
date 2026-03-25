@@ -1,19 +1,24 @@
 const unitPrice = 1000;
-document.getElementById("quantity").addEventListener("input", function () {
-let quantity = this.value;
 
-if(quantity < 0)
-{
-    alert("Quantity cannot be negative");
-    this.value = 0;
-    quantity = 0;
-}
-    let total = unitPrice * quantity * 30;
+const quantityInput = document.getElementById("quantity");
+const totalPriceInput = document.getElementById("totalPrice");
 
-    document.getElementById("totalPrice").value = total;
+function calculateTotal(){
+    let quantity = parseInt(quantityInput.value) || 0;
 
-    if (total > 1000) {
-        alert("You are eligible for a Gift Coupon!");
+    if(quantity < 0){
+        alert("Quantity cannot be negative. Resetting to 0.");
+        quantity = 0;
+        quantityInput.value = 0;
     }
 
-});
+    let total = unitPrice * quantity * 30;  
+
+    totalPriceInput.value = total;
+
+    if(total > 1000){
+        alert("You are eligible for a gift coupon.");
+    }
+}
+
+quantityInput.addEventListener("input", calculateTotal);

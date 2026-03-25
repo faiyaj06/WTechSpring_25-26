@@ -8,44 +8,23 @@
 <body>
      
     <div class="container">
-        
-        <h2>Product Management Page</h2>
+        <form>
+            <fieldset>
 
-        <table>
-            <tr>
-                <td>Unit Price:</td>
-            </tr>
-
-            <tr>
-                <td>
-                <input type="text" value="1000" readonly>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Quantity Per Day:</td>
-            </tr>
-
-            <tr>
-                <td>
-                    <input type="number" id="quantity" min="0" placeholder="Enter quantity">
-                </td>
-            </tr>
-
-            <tr>
-                <td>Total Price for 30 Days:</td>
-            </tr>
-
-            <tr>
-                <td>
-                    <input type="number" id="totalPrice" readonly>
-                </td>
-            </tr>
-
-
-        </table>
+                <legend>Product Management Page</legend>
+                
+                <p><strong>Unit Price:</strong> 1000</p>
+                
+                <label>Quantity Per Day:</label>
+                <input type="number" id="quantity" value="0" min="0">
+                <br><br>
+            
+                <label>Total Price for 30 Days:</label>
+                <input type="text" id="totalPrice" value="0" readonly>
+                
+            </fieldset>
+        </form>
     </div>
-
-    <script src="../JS/Validation.js"></script>
+<script src="../JS/Validation.js"></script>
 </body>
 </html>
